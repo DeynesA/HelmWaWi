@@ -8,7 +8,7 @@ def Start():
 def displayMenu():
     """Diese Methode zeigt das Menü im Terminal an und fordert den Benutzer zur Eingabe auf."""
     print("Willkommen zur Helm-Auswahl!")
-    print("Bitte gib die Suchkriterien für dein Helm ein.")
+    print("Bitte gib die Suchkriterien für deinli Helm ein.")
     benutzerEingabe()
 
 def benutzerEingabe():
