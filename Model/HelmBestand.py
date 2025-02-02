@@ -1,4 +1,4 @@
-from Model import Helm
+from Model.Helm import Helm
 
 helme = {
     "Storm Racer": Helm("Storm Racer", "M", 5, 150, "Sport", "Ratsche", "Polycarbonat"),
