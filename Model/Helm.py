@@ -9,5 +9,5 @@ class Helm:
         self.material = material
 
     def __repr__(self):
-        return (f"Helm(Name: {self.name}, Gr\u00f6\u00df: {self.groesse}, Warenbestand: {self.warenbestand}, "
+        return (f"Helm(Name: {self.name}, Gr\u00f6\u00dfe: {self.groesse}, Warenbestand: {self.warenbestand}, "
                 f"Preis: {self.preis}\u20ac, Art: {self.art}, Verschluss: {self.verschluss}, Material: {self.material})")

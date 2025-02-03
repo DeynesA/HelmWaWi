@@ -14,13 +14,9 @@ def suche_helme(preis=None, material=None, groesse=None, art=None, verschluss=No
 
 def helm_auswahl(helm_liste):
     """Zeigt die Details der ausgewählten Helme an."""
-    for helm_name in helm_liste:
-        try:
-            helm = HelmBestand.helme[helm_name]
-            helm_info = (f"{helm.name}, Größe: {helm.groesse}, Warenbestand: {helm.warenbestand}, "
-                         f"Preis: {helm.preis}€, Art: {helm.art}, Verschluss: {helm.verschluss}, "
-                         f"Material: {helm.material}")
-            print(helm_info)
-            print(f"{helm.name} wurde jetzt ausgewählt")
-        except KeyError:
-            print(f"Der Helm'{helm_name}' wurde nicht gefunden.")
+    for helm in helm_liste:
+        helm_info = (f"{helm.name}, Größe: {helm.groesse}, Warenbestand: {helm.warenbestand}, "
+                     f"Preis: {helm.preis}€, Art: {helm.art}, Verschluss: {helm.verschluss}, "
+                     f"Material: {helm.material}")
+        print(helm_info)
+        print(f"{helm.name} wurde jetzt ausgewählt")
