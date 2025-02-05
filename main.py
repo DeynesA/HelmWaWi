@@ -1,7 +1,15 @@
-from View import Terminal as view
+from Controller import Logic
+from View import View
 
-# Aufruf der Methode Start 
-try:
-    view.Start()
-except Exception as e:
-    print(f"Ein Fehler ist aufgetreten: {e}")
+"""
+Dieses Script ist der Entrypoint. Es startet alles Methoden nach und nach
+um ein Ablauf zu gewährleisten
+"""
+
+Logic.generateStrings()
+View.getInput()
+Logic.getHelmets()
+View.printHelmet()
+
+
+
